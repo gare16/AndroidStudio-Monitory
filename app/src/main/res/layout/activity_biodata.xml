@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBackground"
+    tools:context=".Biodata">
+
+    <TextView
+        android:id="@+id/biodataName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/biodata_name"
+        style="@style/TextGunmetalNunitoBold24"
+        android:layout_marginTop="@dimen/dimen76"
+        android:layout_marginStart="@dimen/dimen26"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/inputName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dimen5"
+        android:hint="@string/biodata_hint_name_holder"
+        android:layout_marginHorizontal="@dimen/dimen26"
+        android:paddingBottom="@dimen/dimen17"
+        style="@style/EdtWhiteFour15"
+        app:layout_constraintTop_toBottomOf="@id/biodataName" />
+
+    <TextView
+        android:id="@+id/biodataAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/biodata_age"
+        style="@style/TextGunmetalNunitoBold24"
+        android:layout_marginTop="@dimen/dimen26"
+        android:layout_marginStart="@dimen/dimen26"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputName"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/inputAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dimen5"
+        android:hint="@string/biodata_age_holder"
+        android:paddingBottom="@dimen/dimen17"
+        android:layout_marginHorizontal="@dimen/dimen26"
+        android:inputType="number"
+        style="@style/EdtWhiteFour15"
+        app:layout_constraintTop_toBottomOf="@id/biodataAge" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEnter"
+        android:layout_width="@dimen/dimen150"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        style="@style/ButtonYellowRounded18RubikMedium14Black"
+        android:layout_marginBottom="@dimen/dimen76"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
